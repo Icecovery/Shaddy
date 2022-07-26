@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rope Distance
+  m_Shader: {fileID: 4800000, guid: c7ce3455a594d1442b25821d960e3a16, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _Cutoff: 0.5
+    - _Exp: 3.24
+    - _Opacity: 0.486
+    - _ambientBase: 0.683
+    - _distance: 30
+    - _distanceFade: 5
+    - _exp: 2.71
+    - _fadeDistance: 10
+    - _opacity: 0.5
+    - _power: 3.5
+    - _transmission: 0.45
+    m_Colors:
+    - _Color: {r: 0.9725491, g: 0.7725491, b: 0.59607846, a: 1}
+    - _node_8988: {r: 0, g: 0, b: 0, a: 0}

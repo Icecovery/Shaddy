@@ -58,3 +58,27 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+# Custom items
+#
+# Exclude IPMT
+#
+/Assets/TextMesh Pro/
+/Assets/PartTools/
+/Assets/SquadCore/
+/Assets/Plugins/
+/Assets/IPMT/
+/Assets/TextMesh Pro.meta
+/Assets/PartTools.meta
+/Assets/SquadCore.meta
+/Assets/Plugins.meta
+/Assets/IPMT.meta
+
+#
+# Exclude Shader Forge
+#
+/Assets/ShaderForge/
+
+# Parttool config
+PartTools.cfg
+ipmtConfig.json

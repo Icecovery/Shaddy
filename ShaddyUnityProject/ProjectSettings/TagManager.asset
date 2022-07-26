@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Airlock
+  - Ladder
+  - Icon_Hidden
+  - Icon_Only
+  - NoAttach
+  - Drag_Hidden
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PartsList_Icons
+  - Atmosphere
+  - Scaled Scenery
+  - UIDialog
+  - UIVectors
+  - UI_Mask
+  - Screens
+  - Local SceneryLayer
+  - Kerbals
+  - EVA
+  - SkySphere
+  - PhysicalObjects
+  - Internal Space
+  - Part Triggers
+  - KerbalInstructors
+  - AeroFXIgnore
+  - MapFX
+  - UIAdditional
+  - WheelCollidersIgnore
+  - WheelColliders
+  - TerrainColliders
+  - DragRender
+  - SurfaceFX
+  - Vectors
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
