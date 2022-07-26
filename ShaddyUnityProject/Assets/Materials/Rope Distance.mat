@@ -23,14 +23,20 @@ Material:
     - _Cutoff: 0.5
     - _Exp: 3.24
     - _Opacity: 0.486
-    - _ambientBase: 0.683
+    - _ambientBase: 0.5
     - _distance: 30
     - _distanceFade: 5
     - _exp: 2.71
     - _fadeDistance: 10
+    - _fadeInEndDistance: 35
+    - _fadeInFullDistance: 30
+    - _fadeInStartDistance: 30
+    - _fadeInTransisionDistance: 5
+    - _fresnelPower: 3
     - _opacity: 0.5
     - _power: 3.5
     - _transmission: 0.45
     m_Colors:
     - _Color: {r: 0.9725491, g: 0.7725491, b: 0.59607846, a: 1}
+    - _color: {r: 0.9725491, g: 0.7725491, b: 0.59607846, a: 1}
     - _node_8988: {r: 0, g: 0, b: 0, a: 0}

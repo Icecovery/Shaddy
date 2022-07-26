@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rope Core
-  m_Shader: {fileID: 4800000, guid: 6789aa007ad957f4bb8e053658a885dc, type: 3}
-  m_ShaderKeywords: _NORMALMAP
+  m_Name: ChuteBumped
+  m_Shader: {fileID: 4800000, guid: 0c38e2a5885a33a47a2db198e9a10808, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: fb2f3f1daa44f604496abcd632c96883, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 079c0882a35a9c94ea121ebca2a7ec5a, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: fb2f3f1daa44f604496abcd632c96883, type: 3}
+        m_Texture: {fileID: 2800000, guid: e00d5a9a0944134448432ccacf221b95, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -63,12 +63,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _node_4655:
-        m_Texture: {fileID: 0}
+    - _diffuseMap:
+        m_Texture: {fileID: 2800000, guid: 079c0882a35a9c94ea121ebca2a7ec5a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _node_9484:
-        m_Texture: {fileID: 2800000, guid: 51702a3731f725b4392f584b262150f8, type: 3}
+    - _normalMap:
+        m_Texture: {fileID: 2800000, guid: fb2f3f1daa44f604496abcd632c96883, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -89,15 +89,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _ambientBase: 0.5
-    - _distance: 25
-    - _node_2067: 0
-    - _node_3268: 0
-    - _node_4256: 0
-    - _opacity: 1
-    - _power: 3
     - _transmission: 0.45
     m_Colors:
-    - _Color: {r: 0.9725491, g: 0.7725491, b: 0.59607846, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _color: {r: 0.9725491, g: 0.7725491, b: 0.59607846, a: 1}
-    - _node_5211: {r: 1, g: 0.046829864, b: 0, a: 1}
+    - _color: {r: 1, g: 1, b: 1, a: 1}
