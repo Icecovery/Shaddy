@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 3374767078
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 496fb8b7c5d34f4e3869a8bc6ebdc0ff
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55d48f4ad9c3b13330b9eb5ee5686477
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Shaders/Translucent (Monocolor).shader
+- Assets/Shaders/Translucent Cutout (Mapped).shader
+- Assets/Shaders/Translucent Specular (Mapped).shader
+- Assets/Shaders/Translucent (Monocolor) (Fade In).shader
+- Assets/Shaders/Translucent (Bumped).shader
+- Assets/Shaders/Translucent (Monocolor) (Clip Out).shader
+- Assets/Shaders/Translucent (Mapped) (Bumped).shader
+- Assets/Shaders/Translucent Specular.shader
+- Assets/Shaders/Translucent (Mapped).shader
+- Assets/Shaders/Translucent Cutout.shader
+- Assets/Shaders/Translucent Specular (Mapped) (Bumped).shader
+- Assets/Shaders/Translucent.shader
+- Assets/Shaders/Translucent Specular (Bumped).shader
+- Assets/Shaders/Translucent Cutout (Bumped).shader
+- Assets/Shaders/Translucent Cutout (Mapped) (Bumped).shader
+Dependencies: []
