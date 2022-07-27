@@ -22,7 +22,7 @@ You may want to use [Shabby](https://github.com/taniwha/Shabby) to load Shaddy s
 
 To start making mods using Shaddy:
 
-* First download the SDK in GitHub Release.
+* First download the SDK in [GitHub Release](https://github.com/Icecovery/Shaddy/releases).
 
 * Then, import the downloaded unitypackage to your unity project. 
 
@@ -112,36 +112,23 @@ Back
 
 ### Manifest
 
-* [Translucent](#shaddytranslucent)
-
-* [Translucent (Bumped)](#shaddytranslucent-bumped)
-
-* [Translucent (Mapped)](#shaddytranslucent-mapped)
-
-* [Translucent (Mapped) (Bumped)](#shaddytranslucent-mapped-bumped)
-
-* [Translucent Specular](#shaddytranslucent-specular)
-
-* [Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)
-
-* [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)
-
-* [Translucent Specular (Mapped) (Bumped)](#shaddytranslucent-specular-mapped-bumped)
-
-* [Translucent Cutout](#shaddytranslucent-cutout)
-
-* [Translucent Cutout (Bumped)](#shaddytranslucent-cutout-bumped)
-
-* [Translucent Cutout (Mapped)](#shaddytranslucent-cutout-mapped)
-
-* [Translucent Cutout (Mapped) (Bumped)](#shaddytranslucent-cutout-mapped-bumped)
-
-* [Translucent (Monocolor)](#shaddytranslucent-monocolor)
-
-* [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)
-
-* [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)
-
+| Name                                                                                  | Render Queue |
+|---------------------------------------------------------------------------------------|:------------:|
+| [Translucent](#shaddytranslucent)                                                     | 2000         |
+| [Translucent (Bumped)](#shaddytranslucent-bumped)                                     | 2000         |
+| [Translucent (Mapped)](#shaddytranslucent-mapped)                                     | 2000         |
+| [Translucent (Mapped) (Bumped)](#shaddytranslucent-mapped-bumped)                     | 2000         |
+| [Translucent Specular](#shaddytranslucent-specular)                                   | 2000         |
+| [Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)                   | 2000         |
+| [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)                   | 2000         |
+| [Translucent Specular (Mapped) (Bumped)](shaddytranslucent-specular-mapped-bumped)    | 2000         |
+| [Translucent Cutout](#shaddytranslucent-cutout)                                       | 2450         |
+| [Translucent Cutout (Bumped)](#shaddytranslucent-cutout-bumped)                       | 2450         |
+| [Translucent Cutout (Mapped)](#shaddytranslucent-cutout-mapped)                       | 2450         |
+| [Translucent Cutout (Mapped) (Bumped)](#shaddytranslucent-cutout-mapped-bumped)       | 2450         |
+| [Translucent (Monocolor)](#shaddytranslucent-monocolor)                               | 2000         |
+| [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)           | 2450         |
+| [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)             | 3000         |
 
 ### Common Properties
 
@@ -339,7 +326,7 @@ Shaddy/Translucent (Monocolor) but will fade in after some distance, useful when
 <details>
 <summary><b>Click to Expand</b></summary>
 
-In this example, the Canopy is using [Translucent (Mapped)](#shaddytranslucent-mapped), Rope is using [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out), Rope (low poly) is using [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in), and Rope Core is using [Translucent (Monocolor)](#shaddytranslucent-monocolor).
+In this example, the Canopy is using [Translucent (Bumped)](#shaddytranslucent-bumped), Rope is using [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out), Rope (low poly) is using [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in), and Rope Core is using [Translucent (Monocolor)](#shaddytranslucent-monocolor).
 
 Canopy
 
