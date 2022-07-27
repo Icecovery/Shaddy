@@ -1,0 +1,23 @@
+{
+	"NAME":"Shabby",
+	"URL":"https://github.com/Icecovery/Shaddy/raw/main/GameData/Shaddy/Shaddy.version",
+	"DOWNLOAD":"https://spacedock.info/mod/xxxx/xxxx/download/",
+	"VERSION": 
+	{
+		"MAJOR": 1,
+		"MINOR": 0,
+		"PATCH": 0
+	},
+	"KSP_VERSION_MIN": 
+	{
+		"MAJOR": 1,
+		"MINOR": 12,
+		"PATCH": 0
+	},
+	"KSP_VERSION_MAX": 
+	{
+		"MAJOR": 1,
+		"MINOR": 12,
+		"PATCH": 99
+	}
+}
