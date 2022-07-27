@@ -63,6 +63,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _diffuseMap:
+        m_Texture: {fileID: 2800000, guid: d58222ea217c9b24193b43b931336cec, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _node_4655:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -106,3 +110,4 @@ Material:
     - _TemperatureColor: {r: 0, g: 0, b: 0, a: 0}
     - _node_5211: {r: 1, g: 0.046829864, b: 0, a: 1}
     - _node_8251: {r: 0, g: 0, b: 0, a: 1}
+    - _transmissionColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

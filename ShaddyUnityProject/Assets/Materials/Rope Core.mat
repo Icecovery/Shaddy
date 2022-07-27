@@ -88,7 +88,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _ambientBase: 0.5
+    - _ambientBase: 0.41
     - _distance: 25
     - _node_2067: 0
     - _node_3268: 0
@@ -101,3 +101,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _color: {r: 0.9725491, g: 0.7725491, b: 0.59607846, a: 1}
     - _node_5211: {r: 1, g: 0.046829864, b: 0, a: 1}
+    - _transmissionColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
