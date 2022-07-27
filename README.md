@@ -26,7 +26,7 @@ To start making mods using Shaddy:
 
 * Export the part as if it is using stock KSP shaders, and ignore the Part Tool warning on using a stock shader.
 
-* Install Shaddy from CKAN or SpaceDock to GameData.
+* Install Shaddy from CKAN or [SpaceDock](https://spacedock.info/mod/3064/Shaddy) to GameData.
 
 * If you are using [Shabby](https://github.com/taniwha/Shabby) to load Shaddy shaders, make sure it is installed, too.
 
@@ -39,6 +39,14 @@ To start making mods using Shaddy:
 Notes:
 
 All Shaddy/Translucent shaders are double-sided (No back face or front face culling). This means if you are making a parachute or a leaf model that has the same texture on both sides, you don't have to duplicate the mesh and then flip the faces, one-sided mesh will work just as fine as a double-sided one.
+
+---
+
+## Download
+
+For players: [SpaceDock](https://spacedock.info/mod/3064/Shaddy)
+
+For modders: [SDK](https://github.com/Icecovery/Shaddy/releases)
 
 ---
 

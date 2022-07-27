@@ -1,7 +1,7 @@
 {
 	"NAME":"Shabby",
-	"URL":"https://github.com/Icecovery/Shaddy/raw/main/GameData/Shaddy/Shaddy.version",
-	"DOWNLOAD":"https://spacedock.info/mod/xxxx/xxxx/download/",
+	"URL":"https://raw.githubusercontent.com/Icecovery/Shaddy/master/GameData/Shaddy/Shaddy.version",
+	"DOWNLOAD":"https://spacedock.info/mod/3064/Shaddy/download",
 	"VERSION": 
 	{
 		"MAJOR": 1,
