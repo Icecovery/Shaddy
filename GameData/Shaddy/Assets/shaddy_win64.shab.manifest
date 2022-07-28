@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3374767078
+CRC: 2290569811
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 496fb8b7c5d34f4e3869a8bc6ebdc0ff
+    Hash: ec49af149a85ee30e46c33428fd823fc
   TypeTreeHash:
     serializedVersion: 2
     Hash: 55d48f4ad9c3b13330b9eb5ee5686477
@@ -14,7 +14,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Shaders/Translucent (Monocolor).shader
-- Assets/Shaders/Translucent Cutout (Mapped).shader
+- Assets/Shaders/Translucent Cutoff (Mapped).shader
 - Assets/Shaders/Translucent Specular (Mapped).shader
 - Assets/Shaders/Translucent (Monocolor) (Fade In).shader
 - Assets/Shaders/Translucent (Bumped).shader
@@ -22,10 +22,10 @@ Assets:
 - Assets/Shaders/Translucent (Mapped) (Bumped).shader
 - Assets/Shaders/Translucent Specular.shader
 - Assets/Shaders/Translucent (Mapped).shader
-- Assets/Shaders/Translucent Cutout.shader
+- Assets/Shaders/Translucent Cutoff.shader
 - Assets/Shaders/Translucent Specular (Mapped) (Bumped).shader
 - Assets/Shaders/Translucent.shader
 - Assets/Shaders/Translucent Specular (Bumped).shader
-- Assets/Shaders/Translucent Cutout (Bumped).shader
-- Assets/Shaders/Translucent Cutout (Mapped) (Bumped).shader
+- Assets/Shaders/Translucent Cutoff (Bumped).shader
+- Assets/Shaders/Translucent Cutoff (Mapped) (Bumped).shader
 Dependencies: []

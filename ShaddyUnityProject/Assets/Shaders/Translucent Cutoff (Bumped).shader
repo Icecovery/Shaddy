@@ -1,15 +1,14 @@
 // Shader created with Shader Forge v1.40 
 // Shader Forge (c) Freya Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:True,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32415,y:32724,varname:node_4013,prsc:2|diff-8856-RGB,normal-8523-RGB,transm-6060-OUT,amdfl-7873-OUT,clip-8856-A;n:type:ShaderForge.SFN_Tex2d,id:8856,x:32171,y:32598,ptovrint:False,ptlb:diffuseMap,ptin:_diffuseMap,varname:_Diffuse,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:8523,x:32171,y:32775,ptovrint:False,ptlb:normalMap,ptin:_normalMap,varname:_Normal,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_LightColor,id:5405,x:31974,y:33119,varname:node_5405,prsc:2;n:type:ShaderForge.SFN_Multiply,id:7873,x:32171,y:33119,varname:node_7873,prsc:2|A-5405-RGB,B-5405-A,C-3582-OUT;n:type:ShaderForge.SFN_Slider,id:3582,x:31817,y:33261,ptovrint:False,ptlb:ambientBase,ptin:_ambientBase,varname:_ambientBase,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Tex2d,id:9255,x:31974,y:32889,ptovrint:False,ptlb:transmissionMap,ptin:_transmissionMap,varname:node_9255,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:1,isnm:False;n:type:ShaderForge.SFN_ValueProperty,id:6497,x:31974,y:33064,ptovrint:False,ptlb:transmissionPower,ptin:_transmissionPower,varname:node_6497,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Multiply,id:6060,x:32171,y:32944,varname:node_6060,prsc:2|A-9255-RGB,B-6497-OUT;proporder:8856-8523-9255-6497-3582;pass:END;sub:END;*/
+/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:True,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32415,y:32724,varname:node_4013,prsc:2|diff-8856-RGB,normal-8523-RGB,transm-5194-RGB,amdfl-7873-OUT,clip-8856-A;n:type:ShaderForge.SFN_Tex2d,id:8856,x:32171,y:32598,ptovrint:False,ptlb:MainTex,ptin:_MainTex,varname:_Diffuse,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:8523,x:32171,y:32775,ptovrint:False,ptlb:BumpMap,ptin:_BumpMap,varname:_Normal,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_LightColor,id:5405,x:31974,y:33119,varname:node_5405,prsc:2;n:type:ShaderForge.SFN_Multiply,id:7873,x:32171,y:33119,varname:node_7873,prsc:2|A-5405-RGB,B-5405-A,C-3582-OUT;n:type:ShaderForge.SFN_Slider,id:3582,x:31817,y:33261,ptovrint:False,ptlb:AmbientBase,ptin:_AmbientBase,varname:_ambientBase,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Color,id:5194,x:32171,y:32966,ptovrint:False,ptlb:TransmissionColor,ptin:_TransmissionColor,varname:node_5194,prsc:2,glob:False,taghide:False,taghdr:True,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;proporder:8856-8523-5194-3582;pass:END;sub:END;*/
 
-Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
+Shader "Shaddy/Translucent Cutoff (Bumped)" {
     Properties {
-        _diffuseMap ("diffuseMap", 2D) = "white" {}
-        _normalMap ("normalMap", 2D) = "bump" {}
-        _transmissionMap ("transmissionMap", 2D) = "gray" {}
-        _transmissionPower ("transmissionPower", Float ) = 1
-        _ambientBase ("ambientBase", Range(0, 1)) = 0.5
+        _MainTex ("MainTex", 2D) = "white" {}
+        _BumpMap ("BumpMap", 2D) = "bump" {}
+        [HDR]_TransmissionColor ("TransmissionColor", Color) = (0.5,0.5,0.5,1)
+        _AmbientBase ("AmbientBase", Range(0, 1)) = 0.5
         [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
     }
     SubShader {
@@ -35,12 +34,11 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
             #pragma multi_compile_fog
             #pragma target 2.0
             uniform float4 _LightColor0;
-            uniform sampler2D _diffuseMap; uniform float4 _diffuseMap_ST;
-            uniform sampler2D _normalMap; uniform float4 _normalMap_ST;
-            uniform sampler2D _transmissionMap; uniform float4 _transmissionMap_ST;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
+            uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
             UNITY_INSTANCING_BUFFER_START( Props )
-                UNITY_DEFINE_INSTANCED_PROP( float, _ambientBase)
-                UNITY_DEFINE_INSTANCED_PROP( float, _transmissionPower)
+                UNITY_DEFINE_INSTANCED_PROP( float, _AmbientBase)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _TransmissionColor)
             UNITY_INSTANCING_BUFFER_END( Props )
             struct VertexInput {
                 UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -83,11 +81,11 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 _normalMap_var = UnpackNormal(tex2D(_normalMap,TRANSFORM_TEX(i.uv0, _normalMap)));
-                float3 normalLocal = _normalMap_var.rgb;
+                float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(i.uv0, _BumpMap)));
+                float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
-                float4 _diffuseMap_var = tex2D(_diffuseMap,TRANSFORM_TEX(i.uv0, _diffuseMap));
-                clip(_diffuseMap_var.a - 0.5);
+                float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                clip(_MainTex_var.a - 0.5);
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
@@ -96,16 +94,15 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
 /////// Diffuse:
                 float NdotL = dot( normalDirection, lightDirection );
                 float3 forwardLight = max(0.0, NdotL );
-                float4 _transmissionMap_var = tex2D(_transmissionMap,TRANSFORM_TEX(i.uv0, _transmissionMap));
-                float _transmissionPower_var = UNITY_ACCESS_INSTANCED_PROP( Props, _transmissionPower );
-                float3 backLight = max(0.0, -NdotL ) * (_transmissionMap_var.rgb*_transmissionPower_var);
+                float4 _TransmissionColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _TransmissionColor );
+                float3 backLight = max(0.0, -NdotL ) * _TransmissionColor_var.rgb;
                 NdotL = max(0.0,dot( normalDirection, lightDirection ));
                 float3 directDiffuse = (forwardLight+backLight) * attenColor;
                 float3 indirectDiffuse = float3(0,0,0);
                 indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
-                float _ambientBase_var = UNITY_ACCESS_INSTANCED_PROP( Props, _ambientBase );
-                indirectDiffuse += (_LightColor0.rgb*_LightColor0.a*_ambientBase_var); // Diffuse Ambient Light
-                float3 diffuseColor = _diffuseMap_var.rgb;
+                float _AmbientBase_var = UNITY_ACCESS_INSTANCED_PROP( Props, _AmbientBase );
+                indirectDiffuse += (_LightColor0.rgb*_LightColor0.a*_AmbientBase_var); // Diffuse Ambient Light
+                float3 diffuseColor = _MainTex_var.rgb;
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse;
@@ -134,11 +131,10 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
             #pragma multi_compile_fog
             #pragma target 2.0
             uniform float4 _LightColor0;
-            uniform sampler2D _diffuseMap; uniform float4 _diffuseMap_ST;
-            uniform sampler2D _normalMap; uniform float4 _normalMap_ST;
-            uniform sampler2D _transmissionMap; uniform float4 _transmissionMap_ST;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
+            uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
             UNITY_INSTANCING_BUFFER_START( Props )
-                UNITY_DEFINE_INSTANCED_PROP( float, _transmissionPower)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _TransmissionColor)
             UNITY_INSTANCING_BUFFER_END( Props )
             struct VertexInput {
                 UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -181,11 +177,11 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float3 _normalMap_var = UnpackNormal(tex2D(_normalMap,TRANSFORM_TEX(i.uv0, _normalMap)));
-                float3 normalLocal = _normalMap_var.rgb;
+                float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(i.uv0, _BumpMap)));
+                float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
-                float4 _diffuseMap_var = tex2D(_diffuseMap,TRANSFORM_TEX(i.uv0, _diffuseMap));
-                clip(_diffuseMap_var.a - 0.5);
+                float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                clip(_MainTex_var.a - 0.5);
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
@@ -194,12 +190,11 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
 /////// Diffuse:
                 float NdotL = dot( normalDirection, lightDirection );
                 float3 forwardLight = max(0.0, NdotL );
-                float4 _transmissionMap_var = tex2D(_transmissionMap,TRANSFORM_TEX(i.uv0, _transmissionMap));
-                float _transmissionPower_var = UNITY_ACCESS_INSTANCED_PROP( Props, _transmissionPower );
-                float3 backLight = max(0.0, -NdotL ) * (_transmissionMap_var.rgb*_transmissionPower_var);
+                float4 _TransmissionColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _TransmissionColor );
+                float3 backLight = max(0.0, -NdotL ) * _TransmissionColor_var.rgb;
                 NdotL = max(0.0,dot( normalDirection, lightDirection ));
                 float3 directDiffuse = (forwardLight+backLight) * attenColor;
-                float3 diffuseColor = _diffuseMap_var.rgb;
+                float3 diffuseColor = _MainTex_var.rgb;
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse;
@@ -226,7 +221,7 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
             #pragma multi_compile_shadowcaster
             #pragma multi_compile_fog
             #pragma target 2.0
-            uniform sampler2D _diffuseMap; uniform float4 _diffuseMap_ST;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float2 texcoord0 : TEXCOORD0;
@@ -245,8 +240,8 @@ Shader "Shaddy/Translucent Cutout (Mapped) (Bumped)" {
             float4 frag(VertexOutput i, float facing : VFACE) : COLOR {
                 float isFrontFace = ( facing >= 0 ? 1 : 0 );
                 float faceSign = ( facing >= 0 ? 1 : -1 );
-                float4 _diffuseMap_var = tex2D(_diffuseMap,TRANSFORM_TEX(i.uv0, _diffuseMap));
-                clip(_diffuseMap_var.a - 0.5);
+                float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                clip(_MainTex_var.a - 0.5);
                 SHADOW_CASTER_FRAGMENT(i)
             }
             ENDCG
