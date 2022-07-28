@@ -69,7 +69,7 @@ Parachute LOD effect, see [Setup Parachute LOD](#setup-parachute-lod) section on
 
 ![](Media/RopeLOD.gif)
 
-[Shaddy/Translucent Cutout (Mapped) (Bumped)](#shaddytranslucent-cutout-mapped-bumped) shader comparing with KSP/Alpha/Cutoff (Bumped) on a leaf
+[Shaddy/Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped) shader comparing with KSP/Alpha/Cutoff (Bumped) on a leaf
 
 Front
 
@@ -122,10 +122,10 @@ Back
 | [Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)                   | 2000         |
 | [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)                   | 2000         |
 | [Translucent Specular (Mapped) (Bumped)](shaddytranslucent-specular-mapped-bumped)    | 2000         |
-| [Translucent Cutout](#shaddytranslucent-cutout)                                       | 2450         |
-| [Translucent Cutout (Bumped)](#shaddytranslucent-cutout-bumped)                       | 2450         |
-| [Translucent Cutout (Mapped)](#shaddytranslucent-cutout-mapped)                       | 2450         |
-| [Translucent Cutout (Mapped) (Bumped)](#shaddytranslucent-cutout-mapped-bumped)       | 2450         |
+| [Translucent Cutoff](#shaddytranslucent-cutoff)                                       | 2450         |
+| [Translucent Cutoff (Bumped)](#shaddytranslucent-cutoff-bumped)                       | 2450         |
+| [Translucent Cutoff (Mapped)](#shaddytranslucent-cutoff-mapped)                       | 2450         |
+| [Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)       | 2450         |
 | [Translucent (Monocolor)](#shaddytranslucent-monocolor)                               | 2000         |
 | [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)           | 2450         |
 | [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)             | 3000         |
@@ -134,15 +134,15 @@ Back
 
 | Property             | Type    | Description |
 |----------------------|---------|-------------|
-| `_color`             | Color   | The base color of a one-colored object |
-| `_diffuseMap`        | Texture | Base color / albedo / diffuse map of the object |
-| `_normalMap`         | Texture | Normal / bump map of the object |
-| `_specularColor`     | Color   | The color of the specular highlight. Works in the same way as in KSP/Specular |
-| `_shininess`         | Float   | Controls how shiny the specular highlight is. Works in the same way as in KSP/Specular |
-| `_transmissionColor` | Color   | Controls the color of the surface when the light source is behind the surface |
-| `_transmissionMap`   | Texture | Per-pixel transmission color map |
-| `_transmissionPower` | Float   | Value multiplier of the transmission map |
-| `_ambientBase`       | Float   | Controls how much the ambient light affect the surface color |
+| `_Color`             | Color   | The base color of a one-colored object |
+| `_MainTex`           | Texture | Base color / albedo / diffuse map of the object |
+| `_BumpMap`           | Texture | Normal / bump map of the object |
+| `_SpecColor`         | Color   | The color of the specular highlight. Works in the same way as in KSP/Specular |
+| `_Shininess`         | Float   | Controls how shiny the specular highlight is. Works in the same way as in KSP/Specular |
+| `_TransmissionColor` | Color   | Controls the color of the surface when the light source is behind the surface |
+| `_TransmissionMap`   | Texture | Per-pixel transmission color map |
+| `_TransmissionPower` | Float   | Value multiplier of the transmission map |
+| `_AmbientBase`       | Float   | Controls how much the ambient light affect the surface color |
 
 ### Shaddy/Translucent
 
@@ -150,9 +150,9 @@ Most basic translucent shader.
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          |      |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          |      |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent (Bumped)
 
@@ -160,10 +160,10 @@ Shaddy/Translucent but with normal map support
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          |      |
-| `_normalMap`         | Texture |          |      |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          |      |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent (Mapped)
 
@@ -171,10 +171,10 @@ Shaddy/Translucent but uses per-pixel transmission value
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          |      |
-| `_transmissionMap`   | Texture |          |      |
-| `_transmissionPower` | Float   |          |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          |      |
+| `_TransmissionMap`   | Texture |          |      |
+| `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent (Mapped) (Bumped)
 
@@ -182,11 +182,11 @@ Shaddy/Translucent (Bumped) but uses per-pixel transmission value
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|----- |
-| `_diffuseMap`        | Texture |          |      |
-| `_normalMap`         | Texture |          |      |
-| `_transmissionMap`   | Texture |          |      |
-| `_transmissionPower` | Float   |          |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          |      |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionMap`   | Texture |          |      |
+| `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent Specular
 
@@ -194,11 +194,11 @@ KSP/Specular but translucent
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
-| `_specularColor`     | Color   |          |      |
-| `_shininess`         | Float   | 0.03 - 1 |      |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
+| `_SpecColor`         | Color   |          |      |
+| `_Shininess`         | Float   | 0.03 - 1 |      |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent Specular (Bumped)
 
@@ -206,12 +206,12 @@ KSP/Bumped Specular but translucent
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
-| `_specularColor`     | Color   |          |      |
-| `_shininess`         | Float   | 0.03 - 1 |      |
-| `_normalMap`         | Texture |          |      |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
+| `_SpecColor`         | Color   |          |      |
+| `_Shininess`         | Float   | 0.03 - 1 |      |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent Specular (Mapped)
 
@@ -219,12 +219,12 @@ KSP/Specular but uses per-pixel transmission value
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
-| `_specularColor`     | Color   |          |      |
-| `_shininess`         | Float   | 0.03 - 1 |      |
-| `_transmissionMap`   | Texture |          |      |
-| `_transmissionPower` | Float   |          |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
+| `_SpecColor`         | Color   |          |      |
+| `_Shininess`         | Float   | 0.03 - 1 |      |
+| `_TransmissionMap`   | Texture |          |      |
+| `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent Specular (Mapped) (Bumped)
 
@@ -232,57 +232,57 @@ KSP/Bumped Specular but uses per-pixel transmission value
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|----- |
-| `_diffuseMap`        | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
-| `_specularColor`     | Color   |          |      |
-| `_shininess`         | Float   | 0.03 - 1 |      |
-| `_normalMap`         | Texture |          |      |
-| `_transmissionMap`   | Texture |          |      |
-| `_transmissionPower` | Float   |          |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel controls glossiness, same as KSP/Specular |
+| `_SpecColor`         | Color   |          |      |
+| `_Shininess`         | Float   | 0.03 - 1 |      |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionMap`   | Texture |          |      |
+| `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
-### Shaddy/Translucent Cutout
+### Shaddy/Translucent Cutoff
 
 Shaddy/Translucent with alpha clipping
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          | Alpha channel is used for opacity clipping |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel is used for opacity clipping |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
-### Shaddy/Translucent Cutout (Bumped)
+### Shaddy/Translucent Cutoff (Bumped)
 
 Shaddy/Translucent (Bumped) with alpha clipping
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          | Alpha channel is used for opacity clipping |
-| `_normalMap`         | Texture |          |      |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel is used for opacity clipping |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
-### Shaddy/Translucent Cutout (Mapped)
+### Shaddy/Translucent Cutoff (Mapped)
 
 Shaddy/Translucent (Mapped) with alpha clipping
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_diffuseMap`        | Texture |          | Alpha channel is used for opacity clipping |
-| `_transmissionMap`   | Texture |          |      |
-| `_transmissionPower` | Float   |          |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel is used for opacity clipping |
+| `_TransmissionMap`   | Texture |          |      |
+| `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
-### Shaddy/Translucent Cutout (Mapped) (Bumped)
+### Shaddy/Translucent Cutoff (Mapped) (Bumped)
 
 Shaddy/Translucent (Mapped) (Bumped) with alpha clipping
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|----- |
-| `_diffuseMap`        | Texture |          | Alpha channel is used for opacity clipping |
-| `_normalMap`         | Texture |          |      |
-| `_transmissionMap`   | Texture |          |      |
-| `_transmissionPower` | Float   |          |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_MainTex`           | Texture |          | Alpha channel is used for opacity clipping |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionMap`   | Texture |          |      |
+| `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent (Monocolor)
 
@@ -290,9 +290,9 @@ One-colored version of Shaddy/Translucent
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_color`             | Color   |          |      |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
+| `_Color`             | Color   |          |      |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent (Monocolor) (Clip Out)
 
@@ -300,10 +300,10 @@ Shaddy/Translucent (Monocolor) but will clip out after some distance, useful whe
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_color`             | Color   |          |      |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
-| `_clipOutDistance`   | Float   |          | Object will clip out after this distance |
+| `_Color`             | Color   |          |      |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
+| `_ClipOutDistance`   | Float   |          | Object will clip out after this distance |
 
 ### Shaddy/Translucent (Monocolor) (Fade In)
 
@@ -311,13 +311,13 @@ Shaddy/Translucent (Monocolor) but will fade in after some distance, useful when
 
 | Property             | Type    | Range    | Note |
 |----------------------|---------|----------|------|
-| `_color`             | Color   |          | The color of the fresnel effect |
-| `_transmissionColor` | Color   | HDR      |      |
-| `_ambientBase`       | Float   | 0 - 1    |      |
-| `_fresnelPower`      | Float   |          | Controls the power of the fresnel effect |
-| `_opacity`           | Float   |          | Controls the opacity of the fresnel effect |
-|`_fadeInStartDistance`| Float   |          | Object will start to fade in at this distance |
-| `_fadeInEndDistance` | Float   |          | Object will be completely faded in at this distance|
+| `_Color`             | Color   |          | The color of the fresnel effect |
+| `_TransmissionColor` | Color   | HDR      |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
+| `_FresnelPower`      | Float   |          | Controls the power of the fresnel effect |
+| `_Opacity`           | Float   |          | Controls the opacity of the fresnel effect |
+|`_FadeInStartDistance`| Float   |          | Object will start to fade in at this distance |
+| `_FadeInEndDistance` | Float   |          | Object will be completely faded in at this distance|
 
 ---
 
