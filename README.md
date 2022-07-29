@@ -18,9 +18,11 @@ Shaddy does not do anything by itself, it is designed to be used by other mods. 
 
 ### If you are a modder...
 
-You may want to use [Shabby](https://github.com/taniwha/Shabby) to load Shaddy shaders to your parts. Alternatively, you can also use your own shader loader.
+You may want to use [Shabby](https://github.com/taniwha/Shabby) to load Shaddy shaders to your parts. Alternatively, you can also use your own shader loader or [Textures Unlimited](https://forum.kerbalspaceprogram.com/index.php?/topic/167450-*).
 
-To start making mods using Shaddy:
+**Use Shabby:**
+
+To start making mods using Shaddy and Shabby:
 
 * First download the SDK in [GitHub Release](https://github.com/Icecovery/Shaddy/releases).
 
@@ -28,7 +30,7 @@ To start making mods using Shaddy:
 
 * You should now see a folder named `Shaders` appear under your Assets folder.
 
-* Create material that uses these new shaders.
+* Create a material that uses these new shaders and apply it to your part.
 
 * Export the part as if it is using stock KSP shaders, and ignore the Part Tool warning on using a stock shader.
 
@@ -42,7 +44,23 @@ To start making mods using Shaddy:
 
 * Profit.
 
-Notes:
+In this case, Shaddy and Shabby will need to be added to your mod's dependency.
+
+**Use Textures Unlimited:**
+
+If you want the translucent shader to be optional or if you want to add translucent effect to a existing mod, you can use Textures Unlimited's shader replacement feature. 
+
+Starting from version 2.0, Shaddy comes with Textures Unlimited shader bundle and shader data definition, it is located at `GameData/Shaddy/Patches/ShaddyTU.cfg`.
+
+Textures Unlimited config documentation can be found at [Textures Unlimited wiki page](https://github.com/shadowmage45/TexturesUnlimited/wiki/Config-Documentation). Shaddy's stock config (found under `GameData/Shaddy/Patches/`) can also be used as a reference.
+
+In this case, Shaddy and Textures Unlimited will need to be added to your mod's dependency, Shabby will not be a required dependency as Textures Unlimited uses its own shader loader.
+
+**Notes on Possible Conflict:**
+
+If you installed the Shabby v0.2.0 "unofficial build" and Textures Unlimited at the same time, there will be a conflict, resulting in failed shader replacement from Textures Unlimited. This has been solved by the newest change in Shabby, but these changes haven't been released yet.
+
+**Notes:**
 
 All Shaddy/Translucent shaders are double-sided (No back face or front face culling). This means if you are making a parachute or a leaf model that has the same texture on both sides, you don't have to duplicate the mesh and then flip the faces, one-sided mesh will work just as fine as a double-sided one.
 
@@ -356,11 +374,17 @@ The Rope low poly model looks like this, `Cast Shadows` should be set to `Off` i
 
 ---
 
+## Credits
+
+Shaders are made by [Icecovery](https://github.com/Icecovery) using [Shader Forge](https://github.com/FreyaHolmer/ShaderForge).
+
+Textures Unlimited config author: [JonnyOThan](https://github.com/JonnyOThan).
+
+---
+
 ## License
 
 This mod is released under the [MIT License](https://github.com/Icecovery/Shaddy/blob/master/LICENSE).
-
-Shaders are made using [Shader Forge](https://github.com/FreyaHolmer/ShaderForge).
 
 ---
 
