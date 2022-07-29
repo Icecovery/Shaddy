@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.40 
 // Shader Forge (c) Freya Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:True,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32415,y:32724,varname:node_4013,prsc:2|diff-8856-RGB,spec-2670-OUT,gloss-8856-A,transm-1732-RGB,amdfl-7873-OUT;n:type:ShaderForge.SFN_Tex2d,id:8856,x:32171,y:32572,ptovrint:False,ptlb:MainTex,ptin:_MainTex,varname:_Diffuse,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_LightColor,id:5405,x:31974,y:33083,varname:node_5405,prsc:2;n:type:ShaderForge.SFN_Multiply,id:7873,x:32171,y:33070,varname:node_7873,prsc:2|A-5405-RGB,B-5405-A,C-3582-OUT;n:type:ShaderForge.SFN_Slider,id:3582,x:31817,y:33225,ptovrint:False,ptlb:AmbientBase,ptin:_AmbientBase,varname:node_3582,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Color,id:1732,x:32171,y:32911,ptovrint:False,ptlb:TransmissionColor,ptin:_TransmissionColor,varname:node_1732,prsc:2,glob:False,taghide:False,taghdr:True,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Color,id:2928,x:31992,y:32797,ptovrint:False,ptlb:SpecColor,ptin:_SpecColor,varname:node_2928,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Multiply,id:2670,x:32171,y:32736,varname:node_2670,prsc:2|A-7766-OUT,B-2928-RGB;n:type:ShaderForge.SFN_Slider,id:7766,x:31835,y:32697,ptovrint:False,ptlb:Shininess,ptin:_Shininess,varname:node_7766,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0.03,cur:0.03,max:1;proporder:8856-2928-7766-1732-3582;pass:END;sub:END;*/
+/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:True,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32415,y:32724,varname:node_4013,prsc:2|diff-5559-OUT,spec-2670-OUT,gloss-8856-A,emission-6342-OUT,transm-1732-RGB,amdfl-7873-OUT;n:type:ShaderForge.SFN_Tex2d,id:8856,x:31546,y:32538,ptovrint:False,ptlb:MainTex,ptin:_MainTex,varname:_Diffuse,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_LightColor,id:5405,x:31974,y:33083,varname:node_5405,prsc:2;n:type:ShaderForge.SFN_Multiply,id:7873,x:32171,y:33070,varname:node_7873,prsc:2|A-5405-RGB,B-5405-A,C-3582-OUT;n:type:ShaderForge.SFN_Slider,id:3582,x:31817,y:33225,ptovrint:False,ptlb:AmbientBase,ptin:_AmbientBase,varname:node_3582,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Color,id:1732,x:32171,y:32911,ptovrint:False,ptlb:TransmissionColor,ptin:_TransmissionColor,varname:node_1732,prsc:2,glob:False,taghide:False,taghdr:True,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Color,id:2928,x:31992,y:32797,ptovrint:False,ptlb:SpecColor,ptin:_SpecColor,varname:node_2928,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Multiply,id:2670,x:32171,y:32736,varname:node_2670,prsc:2|A-7766-OUT,B-2928-RGB;n:type:ShaderForge.SFN_Slider,id:7766,x:31835,y:32697,ptovrint:False,ptlb:Shininess,ptin:_Shininess,varname:node_7766,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0.03,cur:0.03,max:1;n:type:ShaderForge.SFN_Slider,id:6059,x:30812,y:33180,ptovrint:False,ptlb:RimFalloff,ptin:_RimFalloff,varname:node_7359,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,min:0.01,cur:0.01,max:5;n:type:ShaderForge.SFN_Color,id:7481,x:31160,y:32851,ptovrint:False,ptlb:RimColor,ptin:_RimColor,varname:node_8331,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,c1:0,c2:0,c3:0,c4:0;n:type:ShaderForge.SFN_Color,id:5092,x:31150,y:33176,ptovrint:False,ptlb:TemperatureColor,ptin:_TemperatureColor,varname:node_479,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,c1:0,c2:0,c3:0,c4:0;n:type:ShaderForge.SFN_Color,id:5400,x:31546,y:32738,ptovrint:False,ptlb:Burn Color,ptin:_BurnColor,varname:node_3184,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_OneMinus,id:2244,x:30969,y:33023,varname:node_2244,prsc:2|IN-7263-OUT;n:type:ShaderForge.SFN_Dot,id:7160,x:30613,y:33023,varname:node_7160,prsc:2,dt:0|A-7274-OUT,B-9088-OUT;n:type:ShaderForge.SFN_ViewVector,id:1225,x:30209,y:33023,varname:node_1225,prsc:2;n:type:ShaderForge.SFN_Clamp01,id:7263,x:30795,y:33023,varname:node_7263,prsc:2|IN-7160-OUT;n:type:ShaderForge.SFN_Normalize,id:9088,x:30384,y:33023,varname:node_9088,prsc:2|IN-1225-OUT;n:type:ShaderForge.SFN_Multiply,id:595,x:31348,y:32851,varname:node_595,prsc:2|A-7481-RGB,B-7481-A,C-5644-OUT;n:type:ShaderForge.SFN_Power,id:5644,x:31160,y:33023,varname:node_5644,prsc:2|VAL-2244-OUT,EXP-6059-OUT;n:type:ShaderForge.SFN_Add,id:6342,x:31561,y:32918,varname:node_6342,prsc:2|A-595-OUT,B-5428-OUT;n:type:ShaderForge.SFN_Multiply,id:5428,x:31339,y:33162,varname:node_5428,prsc:2|A-5092-RGB,B-5092-A;n:type:ShaderForge.SFN_Multiply,id:5559,x:31783,y:32538,varname:node_5559,prsc:2|A-8856-RGB,B-5400-RGB;n:type:ShaderForge.SFN_NormalVector,id:7274,x:30384,y:32860,prsc:2,pt:False;proporder:8856-2928-7766-1732-3582-5400-6059-7481-5092;pass:END;sub:END;*/
 
 Shader "Shaddy/Translucent Specular" {
     Properties {
@@ -10,6 +10,10 @@ Shader "Shaddy/Translucent Specular" {
         _Shininess ("Shininess", Range(0.03, 1)) = 0.03
         [HDR]_TransmissionColor ("TransmissionColor", Color) = (0.5,0.5,0.5,1)
         _AmbientBase ("AmbientBase", Range(0, 1)) = 0.5
+        [PerRendererData]_BurnColor ("Burn Color", Color) = (1,1,1,1)
+        [PerRendererData]_RimFalloff ("RimFalloff", Range(0.01, 5)) = 0.01
+        [PerRendererData]_RimColor ("RimColor", Color) = (0,0,0,0)
+        [PerRendererData]_TemperatureColor ("TemperatureColor", Color) = (0,0,0,0)
     }
     SubShader {
         Tags {
@@ -39,6 +43,10 @@ Shader "Shaddy/Translucent Specular" {
                 UNITY_DEFINE_INSTANCED_PROP( float4, _TransmissionColor)
                 UNITY_DEFINE_INSTANCED_PROP( float4, _SpecColor)
                 UNITY_DEFINE_INSTANCED_PROP( float, _Shininess)
+                UNITY_DEFINE_INSTANCED_PROP( float, _RimFalloff)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _RimColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _TemperatureColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _BurnColor)
             UNITY_INSTANCING_BUFFER_END( Props )
             struct VertexInput {
                 UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -104,10 +112,16 @@ Shader "Shaddy/Translucent Specular" {
                 indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
                 float _AmbientBase_var = UNITY_ACCESS_INSTANCED_PROP( Props, _AmbientBase );
                 indirectDiffuse += (_LightColor0.rgb*_LightColor0.a*_AmbientBase_var); // Diffuse Ambient Light
-                float3 diffuseColor = _MainTex_var.rgb;
+                float4 _BurnColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _BurnColor );
+                float3 diffuseColor = (_MainTex_var.rgb*_BurnColor_var.rgb);
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
+////// Emissive:
+                float4 _RimColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RimColor );
+                float _RimFalloff_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RimFalloff );
+                float4 _TemperatureColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _TemperatureColor );
+                float3 emissive = ((_RimColor_var.rgb*_RimColor_var.a*pow((1.0 - saturate(dot(i.normalDir,normalize(viewDirection)))),_RimFalloff_var))+(_TemperatureColor_var.rgb*_TemperatureColor_var.a));
 /// Final Color:
-                float3 finalColor = diffuse + specular;
+                float3 finalColor = diffuse + specular + emissive;
                 fixed4 finalRGBA = fixed4(finalColor,1);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
@@ -138,6 +152,10 @@ Shader "Shaddy/Translucent Specular" {
                 UNITY_DEFINE_INSTANCED_PROP( float4, _TransmissionColor)
                 UNITY_DEFINE_INSTANCED_PROP( float4, _SpecColor)
                 UNITY_DEFINE_INSTANCED_PROP( float, _Shininess)
+                UNITY_DEFINE_INSTANCED_PROP( float, _RimFalloff)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _RimColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _TemperatureColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _BurnColor)
             UNITY_INSTANCING_BUFFER_END( Props )
             struct VertexInput {
                 UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -199,7 +217,8 @@ Shader "Shaddy/Translucent Specular" {
                 float3 backLight = max(0.0, -NdotL ) * _TransmissionColor_var.rgb;
                 NdotL = max(0.0,dot( normalDirection, lightDirection ));
                 float3 directDiffuse = (forwardLight+backLight) * attenColor;
-                float3 diffuseColor = _MainTex_var.rgb;
+                float4 _BurnColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _BurnColor );
+                float3 diffuseColor = (_MainTex_var.rgb*_BurnColor_var.rgb);
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse + specular;
