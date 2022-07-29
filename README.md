@@ -56,6 +56,24 @@ Textures Unlimited config documentation can be found at [Textures Unlimited wiki
 
 In this case, Shaddy and Textures Unlimited will need to be added to your mod's dependency, Shabby will not be a required dependency as Textures Unlimited uses its own shader loader.
 
+**Notes on HDR color properties when configuring Textures Unlimited:**
+
+Some color property has their range marked as *HDR*, which means it supports Unity HDR color that can have a value greater than (255, 255, 255). To find what number you need to use in Textures Unlimited config, multiply each of the R, G, and B channels of your desired color value by the intensity, and round to the nearest integer.
+
+For example: if a color in the Unity editor has an RGB value of (102, 204, 255) and intensity of 4.2, in Textures Unlimited config, write: 
+
+```cs
+PROPERTY
+{
+	name = _SomePropertyName
+	color = 428, 857, 1071 
+	// rgb (102, 204, 255) intensity 4.2
+	// 102 * 4.2 = 428.4, rounded to 428
+	// 204 * 4.2 = 856.8, rounded to 857
+	// 255 * 4.2 = 1071
+}
+```
+
 **Notes on Possible Conflict:**
 
 If you installed the Shabby v0.2.0 "unofficial build" and Textures Unlimited at the same time, there will be a conflict, resulting in failed shader replacement from Textures Unlimited. This has been solved by the newest change in Shabby, but these changes haven't been released yet.
@@ -148,7 +166,9 @@ Back
 | [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)           | 2450         |
 | [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)             | 3000         |
 
-### Common Properties
+### Shader Property Descriptions
+
+These are the descriptions for some properties that are commonly found in all Shaddy shaders, but do note that **Not All shaders have these properties**. Which shader contains what properties can be found in their own section. 
 
 | Property             | Type    | Description |
 |----------------------|---------|-------------|
