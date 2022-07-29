@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.40 
 // Shader Forge (c) Freya Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:True,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32415,y:32724,varname:node_4013,prsc:2|diff-8856-RGB,transm-2830-OUT,amdfl-7873-OUT,clip-8856-A;n:type:ShaderForge.SFN_Tex2d,id:8856,x:32171,y:32725,ptovrint:False,ptlb:MainTex,ptin:_MainTex,varname:_Diffuse,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_LightColor,id:5405,x:31974,y:33119,varname:node_5405,prsc:2;n:type:ShaderForge.SFN_Multiply,id:7873,x:32171,y:33119,varname:node_7873,prsc:2|A-5405-RGB,B-5405-A,C-3582-OUT;n:type:ShaderForge.SFN_Slider,id:3582,x:31817,y:33261,ptovrint:False,ptlb:AmbientBase,ptin:_AmbientBase,varname:_ambientBase,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Tex2d,id:9255,x:31974,y:32882,ptovrint:False,ptlb:TransmissionMap,ptin:_TransmissionMap,varname:node_9255,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:1,isnm:False;n:type:ShaderForge.SFN_Multiply,id:2830,x:32171,y:32882,varname:node_2830,prsc:2|A-9255-RGB,B-1651-OUT;n:type:ShaderForge.SFN_ValueProperty,id:1651,x:31974,y:33052,ptovrint:False,ptlb:TransmissionPower,ptin:_TransmissionPower,varname:node_1651,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;proporder:8856-9255-1651-3582;pass:END;sub:END;*/
+/*SF_DATA;ver:1.40;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,cpap:True,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:True,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32415,y:32724,varname:node_4013,prsc:2|diff-2536-OUT,emission-9725-OUT,transm-2830-OUT,amdfl-7873-OUT,clip-8856-A;n:type:ShaderForge.SFN_Tex2d,id:8856,x:31774,y:32541,ptovrint:False,ptlb:MainTex,ptin:_MainTex,varname:_Diffuse,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_LightColor,id:5405,x:31974,y:33119,varname:node_5405,prsc:2;n:type:ShaderForge.SFN_Multiply,id:7873,x:32171,y:33119,varname:node_7873,prsc:2|A-5405-RGB,B-5405-A,C-3582-OUT;n:type:ShaderForge.SFN_Slider,id:3582,x:31817,y:33261,ptovrint:False,ptlb:AmbientBase,ptin:_AmbientBase,varname:_ambientBase,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.5,max:1;n:type:ShaderForge.SFN_Tex2d,id:9255,x:31974,y:32882,ptovrint:False,ptlb:TransmissionMap,ptin:_TransmissionMap,varname:node_9255,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:1,isnm:False;n:type:ShaderForge.SFN_Multiply,id:2830,x:32171,y:32882,varname:node_2830,prsc:2|A-9255-RGB,B-1651-OUT;n:type:ShaderForge.SFN_ValueProperty,id:1651,x:31974,y:33052,ptovrint:False,ptlb:TransmissionPower,ptin:_TransmissionPower,varname:node_1651,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Slider,id:9139,x:31040,y:33169,ptovrint:False,ptlb:RimFalloff,ptin:_RimFalloff,varname:node_7359,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,min:0.01,cur:0.01,max:5;n:type:ShaderForge.SFN_Color,id:1664,x:31388,y:32840,ptovrint:False,ptlb:RimColor,ptin:_RimColor,varname:node_8331,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,c1:0,c2:0,c3:0,c4:0;n:type:ShaderForge.SFN_Color,id:4221,x:31378,y:33165,ptovrint:False,ptlb:TemperatureColor,ptin:_TemperatureColor,varname:node_479,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,c1:0,c2:0,c3:0,c4:0;n:type:ShaderForge.SFN_Color,id:6497,x:31774,y:32727,ptovrint:False,ptlb:Burn Color,ptin:_BurnColor,varname:node_3184,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:True,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_OneMinus,id:7083,x:31197,y:33012,varname:node_7083,prsc:2|IN-9251-OUT;n:type:ShaderForge.SFN_Dot,id:2807,x:30841,y:33012,varname:node_2807,prsc:2,dt:0|A-9993-OUT,B-5552-OUT;n:type:ShaderForge.SFN_ViewVector,id:2929,x:30437,y:33012,varname:node_2929,prsc:2;n:type:ShaderForge.SFN_Clamp01,id:9251,x:31023,y:33012,varname:node_9251,prsc:2|IN-2807-OUT;n:type:ShaderForge.SFN_Normalize,id:5552,x:30612,y:33012,varname:node_5552,prsc:2|IN-2929-OUT;n:type:ShaderForge.SFN_Multiply,id:9076,x:31576,y:32840,varname:node_9076,prsc:2|A-1664-RGB,B-1664-A,C-4690-OUT;n:type:ShaderForge.SFN_Power,id:4690,x:31388,y:33012,varname:node_4690,prsc:2|VAL-7083-OUT,EXP-9139-OUT;n:type:ShaderForge.SFN_Add,id:9725,x:31789,y:32907,varname:node_9725,prsc:2|A-9076-OUT,B-9457-OUT;n:type:ShaderForge.SFN_Multiply,id:9457,x:31567,y:33151,varname:node_9457,prsc:2|A-4221-RGB,B-4221-A;n:type:ShaderForge.SFN_Multiply,id:2536,x:31962,y:32707,varname:node_2536,prsc:2|A-8856-RGB,B-6497-RGB;n:type:ShaderForge.SFN_NormalVector,id:9993,x:30612,y:32855,prsc:2,pt:False;proporder:8856-9255-1651-3582-6497-9139-1664-4221;pass:END;sub:END;*/
 
 Shader "Shaddy/Translucent Cutoff (Mapped)" {
     Properties {
@@ -9,6 +9,10 @@ Shader "Shaddy/Translucent Cutoff (Mapped)" {
         _TransmissionMap ("TransmissionMap", 2D) = "gray" {}
         _TransmissionPower ("TransmissionPower", Float ) = 1
         _AmbientBase ("AmbientBase", Range(0, 1)) = 0.5
+        [PerRendererData]_BurnColor ("Burn Color", Color) = (1,1,1,1)
+        [PerRendererData]_RimFalloff ("RimFalloff", Range(0.01, 5)) = 0.01
+        [PerRendererData]_RimColor ("RimColor", Color) = (0,0,0,0)
+        [PerRendererData]_TemperatureColor ("TemperatureColor", Color) = (0,0,0,0)
         [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
     }
     SubShader {
@@ -39,6 +43,10 @@ Shader "Shaddy/Translucent Cutoff (Mapped)" {
             UNITY_INSTANCING_BUFFER_START( Props )
                 UNITY_DEFINE_INSTANCED_PROP( float, _AmbientBase)
                 UNITY_DEFINE_INSTANCED_PROP( float, _TransmissionPower)
+                UNITY_DEFINE_INSTANCED_PROP( float, _RimFalloff)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _RimColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _TemperatureColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _BurnColor)
             UNITY_INSTANCING_BUFFER_END( Props )
             struct VertexInput {
                 UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -95,10 +103,16 @@ Shader "Shaddy/Translucent Cutoff (Mapped)" {
                 indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
                 float _AmbientBase_var = UNITY_ACCESS_INSTANCED_PROP( Props, _AmbientBase );
                 indirectDiffuse += (_LightColor0.rgb*_LightColor0.a*_AmbientBase_var); // Diffuse Ambient Light
-                float3 diffuseColor = _MainTex_var.rgb;
+                float4 _BurnColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _BurnColor );
+                float3 diffuseColor = (_MainTex_var.rgb*_BurnColor_var.rgb);
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
+////// Emissive:
+                float4 _RimColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RimColor );
+                float _RimFalloff_var = UNITY_ACCESS_INSTANCED_PROP( Props, _RimFalloff );
+                float4 _TemperatureColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _TemperatureColor );
+                float3 emissive = ((_RimColor_var.rgb*_RimColor_var.a*pow((1.0 - saturate(dot(i.normalDir,normalize(viewDirection)))),_RimFalloff_var))+(_TemperatureColor_var.rgb*_TemperatureColor_var.a));
 /// Final Color:
-                float3 finalColor = diffuse;
+                float3 finalColor = diffuse + emissive;
                 fixed4 finalRGBA = fixed4(finalColor,1);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
@@ -128,6 +142,10 @@ Shader "Shaddy/Translucent Cutoff (Mapped)" {
             uniform sampler2D _TransmissionMap; uniform float4 _TransmissionMap_ST;
             UNITY_INSTANCING_BUFFER_START( Props )
                 UNITY_DEFINE_INSTANCED_PROP( float, _TransmissionPower)
+                UNITY_DEFINE_INSTANCED_PROP( float, _RimFalloff)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _RimColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _TemperatureColor)
+                UNITY_DEFINE_INSTANCED_PROP( float4, _BurnColor)
             UNITY_INSTANCING_BUFFER_END( Props )
             struct VertexInput {
                 UNITY_VERTEX_INPUT_INSTANCE_ID
@@ -180,7 +198,8 @@ Shader "Shaddy/Translucent Cutoff (Mapped)" {
                 float3 backLight = max(0.0, -NdotL ) * (_TransmissionMap_var.rgb*_TransmissionPower_var);
                 NdotL = max(0.0,dot( normalDirection, lightDirection ));
                 float3 directDiffuse = (forwardLight+backLight) * attenColor;
-                float3 diffuseColor = _MainTex_var.rgb;
+                float4 _BurnColor_var = UNITY_ACCESS_INSTANCED_PROP( Props, _BurnColor );
+                float3 diffuseColor = (_MainTex_var.rgb*_BurnColor_var.rgb);
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse;

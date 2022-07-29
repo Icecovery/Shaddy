@@ -16,6 +16,10 @@ Shaddy is a collection of shaders made for Kerbal Space Program, not to be confu
 
 Shaddy does not do anything by itself, it is designed to be used by other mods. If you run into any problem with the shader please feel free to report it as an issue.
 
+Despite that, Shaddy does come with a set of [Textures Unlimited](https://forum.kerbalspaceprogram.com/index.php?/topic/167450-*) config for Stock and ReStock parts. They will only activate if you installed both Textures Unlimited and [Module Manager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-*) at the same time.
+
+Goto [Demo section](#demo) to see the effect preview.
+
 ### If you are a modder...
 
 You may want to use [Shabby](https://github.com/taniwha/Shabby) to load Shaddy shaders to your parts. Alternatively, you can also use your own shader loader or [Textures Unlimited](https://forum.kerbalspaceprogram.com/index.php?/topic/167450-*).
@@ -140,6 +144,18 @@ Back
 
 ![](Media/ISSSolar-Back.png)
 
+[Shaddy/Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped) shader on Restock solar panels
+
+![](Media/RestockSolar.png)
+
+[Shaddy/Translucent](#shaddytranslucent) shader vs stock diffuse shader on stock Communotron 88-88 antenna
+
+Top: Stock shader
+
+Bottom: Shaddy shader
+
+![](Media/88-88Compare.png)
+
 </details>
 
 ---
@@ -148,23 +164,27 @@ Back
 
 ### Manifest
 
-| Name                                                                                  | Render Queue |
-|---------------------------------------------------------------------------------------|:------------:|
-| [Translucent](#shaddytranslucent)                                                     | 2000         |
-| [Translucent (Bumped)](#shaddytranslucent-bumped)                                     | 2000         |
-| [Translucent (Mapped)](#shaddytranslucent-mapped)                                     | 2000         |
-| [Translucent (Mapped) (Bumped)](#shaddytranslucent-mapped-bumped)                     | 2000         |
-| [Translucent Specular](#shaddytranslucent-specular)                                   | 2000         |
-| [Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)                   | 2000         |
-| [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)                   | 2000         |
-| [Translucent Specular (Mapped) (Bumped)](shaddytranslucent-specular-mapped-bumped)    | 2000         |
-| [Translucent Cutoff](#shaddytranslucent-cutoff)                                       | 2450         |
-| [Translucent Cutoff (Bumped)](#shaddytranslucent-cutoff-bumped)                       | 2450         |
-| [Translucent Cutoff (Mapped)](#shaddytranslucent-cutoff-mapped)                       | 2450         |
-| [Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)       | 2450         |
-| [Translucent (Monocolor)](#shaddytranslucent-monocolor)                               | 2000         |
-| [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)           | 2450         |
-| [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)             | 3000         |
+| Name                                                                                          | Render Queue |
+|-----------------------------------------------------------------------------------------------|:------------:|
+| [Translucent](#shaddytranslucent)                                                             | 2000         |
+| [Translucent (Bumped)](#shaddytranslucent-bumped)                                             | 2000         |
+| [Translucent (Mapped)](#shaddytranslucent-mapped)                                             | 2000         |
+| [Translucent (Mapped) (Bumped)](#shaddytranslucent-mapped-bumped)                             | 2000         |
+| [Translucent Specular](#shaddytranslucent-specular)                                           | 2000         |
+| [Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)                           | 2000         |
+| [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)                           | 2000         |
+| [Translucent Specular (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)             | 2000         |
+| [Translucent Specular (All Mapped) (Bumped)](#shaddytranslucent-specular-all-mapped-bumped)   | 2000         |
+| [Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped) | 2000         |
+| [Translucent Cutoff](#shaddytranslucent-cutoff)                                               | 2450         |
+| [Translucent Cutoff (Bumped)](#shaddytranslucent-cutoff-bumped)                               | 2450         |
+| [Translucent Cutoff (Mapped)](#shaddytranslucent-cutoff-mapped)                               | 2450         |
+| [Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)               | 2450         |
+| [Translucent (Monocolor)](#shaddytranslucent-monocolor)                                       | 2000         |
+| [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)                   | 2450         |
+| [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)                     | 3000         |
+
+**NOTE:** Replacement for KSP/Bumped Specular (Mapped) is [Translucent Specular (All Mapped) (Bumped)](#shaddytranslucent-specular-all-mapped-bumped) or [Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped), **Not** [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)
 
 ### Shader Property Descriptions
 
@@ -276,6 +296,35 @@ KSP/Bumped Specular but uses per-pixel transmission value
 | `_BumpMap`           | Texture |          |      |
 | `_TransmissionMap`   | Texture |          |      |
 | `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
+
+### Shaddy/Translucent Specular (All Mapped) (Bumped)
+
+Drop-in replacement of KSP/Bumped Specular (Mapped), per-pixel transmission value via the transmission map
+
+| Property             | Type    | Range    | Note |
+|----------------------|---------|----------|----- |
+| `_MainTex`           | Texture |          |      |
+| `_SpecMap`           | Texture |          |      |
+| `_SpecTint`          | Color   | 0 - 0.1  |      |
+| `_Shininess`         | Float   | 0.03 - 1 |      |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionMap`   | Texture |          |      |
+| `_TransmissionPower` | Float   |          |      |
+| `_AmbientBase`       | Float   | 0 - 1    |      |
+
+### Shaddy/Translucent Specular (Spec Mapped) (Bumped)
+
+Drop-in replacement of KSP/Bumped Specular (Mapped), single HDR transmission color value
+
+| Property             | Type    | Range    | Note |
+|----------------------|---------|----------|----- |
+| `_MainTex`           | Texture |          |      |
+| `_SpecMap`           | Texture |          |      |
+| `_SpecTint`          | Color   | 0 - 0.1  |      |
+| `_Shininess`         | Float   | 0.03 - 1 |      |
+| `_BumpMap`           | Texture |          |      |
+| `_TransmissionColor` | Color   | HDR      |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
 
 ### Shaddy/Translucent Cutoff
