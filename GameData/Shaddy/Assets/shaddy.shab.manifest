@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4154490425
+CRC: 485942966
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9cd3258c44130c48c67537fa5652db6f
+    Hash: 5a80eefee8ee69575d2fade5dc2e594d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 55d48f4ad9c3b13330b9eb5ee5686477
@@ -15,6 +15,8 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Shaders/Translucent (Monocolor).shader
 - Assets/Shaders/Translucent Cutoff (Mapped).shader
+- Assets/Shaders/Translucent Specular (Spec Mapped) (Bumped).shader
+- Assets/Shaders/Translucent Specular (All Mapped) (Bumped).shader
 - Assets/Shaders/Translucent Specular (Mapped).shader
 - Assets/Shaders/Translucent (Monocolor) (Fade In).shader
 - Assets/Shaders/Translucent (Bumped).shader
