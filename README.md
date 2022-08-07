@@ -78,13 +78,15 @@ PROPERTY
 }
 ```
 
-**Notes on Possible Conflict:**
-
-If you installed the Shabby v0.2.0 "unofficial build" and Textures Unlimited at the same time, there will be a conflict, resulting in failed shader replacement from Textures Unlimited. This has been solved by the newest change in Shabby, but these changes haven't been released yet.
-
-**Notes:**
+**Modeling Notes:**
 
 All Shaddy/Translucent shaders are double-sided (No back face or front face culling). This means if you are making a parachute or a leaf model that has the same texture on both sides, you don't have to duplicate the mesh and then flip the faces, one-sided mesh will work just as fine as a double-sided one.
+
+---
+
+## Conflict
+
+If you installed the Shabby v0.2.0 "unofficial build" and Textures Unlimited at the same time, there will be a conflict, resulting in failed shader replacement from Textures Unlimited. This has been solved by the newest change in Shabby (>= v0.3.0). Get it here: http://taniwha.org/~bill/Shabby_v0.3.0.zip
 
 ---
 
@@ -144,7 +146,7 @@ Back
 
 ![](Media/ISSSolar-Back.png)
 
-[Shaddy/Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped) shader on Restock solar panels
+[Shaddy/Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped) shader on Restock solar panels, now with transmission texture by [Rodg88](https://github.com/Rodg88)
 
 ![](Media/RestockSolar.png)
 
@@ -447,7 +449,9 @@ The Rope low poly model looks like this, `Cast Shadows` should be set to `Off` i
 
 Shaders are made by [Icecovery](https://github.com/Icecovery) using [Shader Forge](https://github.com/FreyaHolmer/ShaderForge).
 
-Textures Unlimited config author: [JonnyOThan](https://github.com/JonnyOThan).
+Textures Unlimited config by [JonnyOThan](https://github.com/JonnyOThan).
+
+Restock transmission texture by [Rodg88](https://github.com/Rodg88).
 
 ---
 
