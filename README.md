@@ -6,6 +6,9 @@
 ![modVersion](https://img.shields.io/badge/dynamic/json?style=for-the-badge&?color=f2b02c&label=latest%20version&query=versions%5B%3A1%5D.friendly_version&url=https%3A%2F%2Fspacedock.info%2Fapi%2Fmod%2F3064)
 ![kspVersion](https://img.shields.io/badge/dynamic/json?style=for-the-badge&?color=c44221&label=Build%20for&prefix=KSP%20&query=versions%5B%3A1%5D.game_version&url=https%3A%2F%2Fspacedock.info%2Fapi%2Fmod%2F3064)
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Icecovery/Shaddy?color=%23512BD4&label=Latest%20SDK%20version&logo=unity&style=for-the-badge)
+![GitHub all releases](https://img.shields.io/github/downloads/Icecovery/Shaddy/total?color=%23512BD4&label=SDK%20Downloads&style=for-the-badge)
+
 Shaddy is a collection of shaders made for Kerbal Space Program, not to be confused with [Shabby](https://github.com/taniwha/Shabby), a shader asset bundle loader that you most likely also need to use to load Shaddy shaders :)
 
 ---
@@ -86,15 +89,25 @@ All Shaddy/Translucent shaders are double-sided (No back face or front face cull
 
 ## Conflict
 
-If you installed the Shabby v0.2.0 "unofficial build" and Textures Unlimited at the same time, there will be a conflict, resulting in failed shader replacement from Textures Unlimited. This has been solved by the newest change in Shabby (>= v0.3.0). Get it here: http://taniwha.org/~bill/Shabby_v0.3.0.zip
+If you installed the Shabby v0.2.0 "unofficial build" and Textures Unlimited at the same time, there will be a conflict, resulting in failed shader replacement from Textures Unlimited (Pink parts). This has been solved by the newest change in Shabby (>= v0.3.0). It is available on CKAN, or you can get it here: http://taniwha.org/~bill/Shabby_v0.3.0.zip
 
 ---
 
 ## Download
 
-For players: [SpaceDock](https://spacedock.info/mod/3064/Shaddy)
+For players: [SpaceDock](https://spacedock.info/mod/3064/Shaddy), also available on [CKAN](https://github.com/KSP-CKAN/CKAN).
 
-For modders: [SDK](https://github.com/Icecovery/Shaddy/releases)
+For modders: [SDK](https://github.com/Icecovery/Shaddy/releases). 
+
+Note that not all versions of the mod will have a corresponding version of SDK since shaders might not change between mod releases. Download the latest SDK available if no SDK matches the latest mod version. E.g.: If the latest mod version is v2.2, but the latest SDK version is v2.1, use SDK v2.1.
+
+---
+
+## Installing
+
+For players: Delete everything previously installed under `GameData/Shaddy/` before extracting the zip file. Or use CKAN.
+
+For modders: Delete all previously installed Shaddy shader under `Assets/Shaders/`, then install `Shaddy_vx.x.unitypackage` to your Unity project.
 
 ---
 
@@ -163,6 +176,9 @@ Bottom: Shaddy shader
 ---
 
 ## Available Shaders
+
+<details>
+<summary><b>Click to Expand</b></summary>
 
 ### Manifest
 
@@ -407,6 +423,8 @@ Shaddy/Translucent (Monocolor) but will fade in after some distance, useful when
 | `_Opacity`           | Float   |          | Controls the opacity of the fresnel effect |
 |`_FadeInStartDistance`| Float   |          | Object will start to fade in at this distance |
 | `_FadeInEndDistance` | Float   |          | Object will be completely faded in at this distance|
+
+</details>
 
 ---
 
