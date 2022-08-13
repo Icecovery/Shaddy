@@ -51,7 +51,7 @@ To start making mods using Shaddy and Shabby:
 
 * Profit.
 
-In this case, Shaddy and Shabby will need to be added to your mod's dependency.
+In this case, Shaddy, Shabby, and Module Manager will need to be added to your mod's dependency.
 
 **Use Textures Unlimited:**
 
@@ -61,7 +61,7 @@ Starting from version 2.0, Shaddy comes with Textures Unlimited shader bundle an
 
 Textures Unlimited config documentation can be found at [Textures Unlimited wiki page](https://github.com/shadowmage45/TexturesUnlimited/wiki/Config-Documentation). Shaddy's stock config (found under `GameData/Shaddy/Patches/`) can also be used as a reference.
 
-In this case, Shaddy and Textures Unlimited will need to be added to your mod's dependency, Shabby will not be a required dependency as Textures Unlimited uses its own shader loader.
+In this case, Shaddy, Textures Unlimited, and Module Manager will need to be added to your mod's dependency, Shabby will not be a required dependency as Textures Unlimited uses its own shader loader.
 
 **Notes on HDR color properties when configuring Textures Unlimited:**
 
@@ -84,6 +84,18 @@ PROPERTY
 **Modeling Notes:**
 
 All Shaddy/Translucent shaders are double-sided (No back face or front face culling). This means if you are making a parachute or a leaf model that has the same texture on both sides, you don't have to duplicate the mesh and then flip the faces, one-sided mesh will work just as fine as a double-sided one.
+
+---
+
+## Dependency
+
+[Module Manager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-*)
+
+---
+
+## Recommend
+
+[Textures Unlimited](https://forum.kerbalspaceprogram.com/index.php?/topic/167450-*) for enabling translucent effect on Stock and ReStock solar panels, parachutes, and antennae.
 
 ---
 
@@ -116,7 +128,7 @@ For modders: Delete all previously installed Shaddy shader under `Assets/Shaders
 <details>
 <summary><b>Click to Expand</b></summary>
 
-[Shaddy/Translucent](#shaddytranslucent) shader comparing with KSP/Diffuse shader on a stock parachute
+[Shaddy/Translucent](#shaddytranslucent) shader compared  with KSP/Diffuse shader on a stock parachute
 
 ![](Media/StockChuteCompare.png)
 
@@ -124,7 +136,7 @@ Parachute LOD effect, see [Setup Parachute LOD](#setup-parachute-lod) section on
 
 ![](Media/RopeLOD.gif)
 
-[Shaddy/Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped) shader comparing with KSP/Alpha/Cutoff (Bumped) on a leaf
+[Shaddy/Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped) shader compared  with KSP/Alpha/Cutoff (Bumped) on a leaf
 
 Front
 
@@ -134,7 +146,7 @@ Back
 
 ![](Media/Leaf-Back.png)
 
-[Shaddy/Translucent Specular](#shaddytranslucent-specular) shader comparing with KSP/Specular on the stock large solar panel
+[Shaddy/Translucent Specular](#shaddytranslucent-specular) shader compared with KSP/Specular on the stock large solar panel
 
 Front
 
