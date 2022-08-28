@@ -85,6 +85,8 @@ PROPERTY
 
 All Shaddy/Translucent shaders are double-sided (No back face or front face culling). This means if you are making a parachute or a leaf model that has the same texture on both sides, you don't have to duplicate the mesh and then flip the faces, one-sided mesh will work just as fine as a double-sided one.
 
+If you are replacing shaders on an old part, consider using Shaddy/BackCull/Translucent shaders (With back face culling).
+
 ---
 
 ## Dependency
@@ -194,25 +196,36 @@ Bottom: Shaddy shader
 
 ### Manifest
 
-| Name                                                                                          | Render Queue |
-|-----------------------------------------------------------------------------------------------|:------------:|
-| [Translucent](#shaddytranslucent)                                                             | 2000         |
-| [Translucent (Bumped)](#shaddytranslucent-bumped)                                             | 2000         |
-| [Translucent (Mapped)](#shaddytranslucent-mapped)                                             | 2000         |
-| [Translucent (Mapped) (Bumped)](#shaddytranslucent-mapped-bumped)                             | 2000         |
-| [Translucent Specular](#shaddytranslucent-specular)                                           | 2000         |
-| [Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)                           | 2000         |
-| [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)                           | 2000         |
-| [Translucent Specular (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)             | 2000         |
-| [Translucent Specular (All Mapped) (Bumped)](#shaddytranslucent-specular-all-mapped-bumped)   | 2000         |
-| [Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped) | 2000         |
-| [Translucent Cutoff](#shaddytranslucent-cutoff)                                               | 2450         |
-| [Translucent Cutoff (Bumped)](#shaddytranslucent-cutoff-bumped)                               | 2450         |
-| [Translucent Cutoff (Mapped)](#shaddytranslucent-cutoff-mapped)                               | 2450         |
-| [Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)               | 2450         |
-| [Translucent (Monocolor)](#shaddytranslucent-monocolor)                                       | 2000         |
-| [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)                   | 2450         |
-| [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)                     | 3000         |
+| Name                                                                                                  | Render Queue |
+|-------------------------------------------------------------------------------------------------------|:------------:|
+| [Translucent](#shaddytranslucent)                                                                     | 2000         |
+| [Translucent (Bumped)](#shaddytranslucent-bumped)                                                     | 2000         |
+| [Translucent (Mapped)](#shaddytranslucent-mapped)                                                     | 2000         |
+| [Translucent (Mapped) (Bumped)](#shaddytranslucent-mapped-bumped)                                     | 2000         |
+| [Translucent Specular](#shaddytranslucent-specular)                                                   | 2000         |
+| [Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)                                   | 2000         |
+| [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)                                   | 2000         |
+| [Translucent Specular (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)                     | 2000         |
+| [Translucent Specular (All Mapped) (Bumped)](#shaddytranslucent-specular-all-mapped-bumped)           | 2000         |
+| [Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped)         | 2000         |
+| [Translucent Cutoff](#shaddytranslucent-cutoff)                                                       | 2450         |
+| [Translucent Cutoff (Bumped)](#shaddytranslucent-cutoff-bumped)                                       | 2450         |
+| [Translucent Cutoff (Mapped)](#shaddytranslucent-cutoff-mapped)                                       | 2450         |
+| [Translucent Cutoff (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)                       | 2450         |
+| [Translucent (Monocolor)](#shaddytranslucent-monocolor)                                               | 2000         |
+| [Translucent (Monocolor) (Clip Out)](#shaddytranslucent-monocolor-clip-out)                           | 2450         |
+| [Translucent (Monocolor) (Fade In)](#shaddytranslucent-monocolor-fade-in)                             | 3000         |
+| [BackCull/Translucent](#shaddytranslucent)                                                            | 2000         |
+| [BackCull/Translucent (Bumped)](#shaddytranslucent-bumped)                                            | 2000         |
+| [BackCull/Translucent (Mapped)](#shaddytranslucent-mapped)                                            | 2000         |
+| [BackCull/Translucent (Mapped) (Bumped)](#shaddytranslucent-mapped-bumped)                            | 2000         |
+| [BackCull/Translucent Specular](#shaddytranslucent-specular)                                          | 2000         |
+| [BackCull/Translucent Specular (Bumped)](#shaddytranslucent-specular-bumped)                          | 2000         |
+| [BackCull/Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)                          | 2000         |
+| [BackCull/Translucent Specular (Mapped) (Bumped)](#shaddytranslucent-cutoff-mapped-bumped)            | 2000         |
+| [BackCull/Translucent Specular (All Mapped) (Bumped)](#shaddytranslucent-specular-all-mapped-bumped)  | 2000         |
+| [BackCull/Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped)| 2000         |
+| [BackCull/Translucent (Monocolor)](#shaddytranslucent-monocolor)                                      | 2000         |
 
 **NOTE:** Replacement for KSP/Bumped Specular (Mapped) is [Translucent Specular (All Mapped) (Bumped)](#shaddytranslucent-specular-all-mapped-bumped) or [Translucent Specular (Spec Mapped) (Bumped)](#shaddytranslucent-specular-spec-mapped-bumped), **Not** [Translucent Specular (Mapped)](#shaddytranslucent-specular-mapped)
 
@@ -242,6 +255,8 @@ Most basic translucent shader.
 | `_TransmissionColor` | Color   | HDR      |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
 
+This shader has a back face culling version.
+
 ### Shaddy/Translucent (Bumped)
 
 Shaddy/Translucent but with normal map support
@@ -253,6 +268,8 @@ Shaddy/Translucent but with normal map support
 | `_TransmissionColor` | Color   | HDR      |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
 
+This shader has a back face culling version.
+
 ### Shaddy/Translucent (Mapped)
 
 Shaddy/Translucent but uses per-pixel transmission value
@@ -263,6 +280,8 @@ Shaddy/Translucent but uses per-pixel transmission value
 | `_TransmissionMap`   | Texture |          |      |
 | `_TransmissionPower` | Float   |          |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
+
+This shader has a back face culling version.
 
 ### Shaddy/Translucent (Mapped) (Bumped)
 
@@ -276,6 +295,8 @@ Shaddy/Translucent (Bumped) but uses per-pixel transmission value
 | `_TransmissionPower` | Float   |          |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
 
+This shader has a back face culling version.
+
 ### Shaddy/Translucent Specular
 
 KSP/Specular but translucent
@@ -287,6 +308,8 @@ KSP/Specular but translucent
 | `_Shininess`         | Float   | 0.03 - 1 |      |
 | `_TransmissionColor` | Color   | HDR      |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
+
+This shader has a back face culling version.
 
 ### Shaddy/Translucent Specular (Bumped)
 
@@ -301,6 +324,8 @@ KSP/Bumped Specular but translucent
 | `_TransmissionColor` | Color   | HDR      |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
 
+This shader has a back face culling version.
+
 ### Shaddy/Translucent Specular (Mapped)
 
 KSP/Specular but uses per-pixel transmission value
@@ -313,6 +338,8 @@ KSP/Specular but uses per-pixel transmission value
 | `_TransmissionMap`   | Texture |          |      |
 | `_TransmissionPower` | Float   |          |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
+
+This shader has a back face culling version.
 
 ### Shaddy/Translucent Specular (Mapped) (Bumped)
 
@@ -327,6 +354,8 @@ KSP/Bumped Specular but uses per-pixel transmission value
 | `_TransmissionMap`   | Texture |          |      |
 | `_TransmissionPower` | Float   |          |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
+
+This shader has a back face culling version.
 
 ### Shaddy/Translucent Specular (All Mapped) (Bumped)
 
@@ -343,6 +372,8 @@ Drop-in replacement of KSP/Bumped Specular (Mapped), per-pixel transmission valu
 | `_TransmissionPower` | Float   |          |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
 
+This shader has a back face culling version.
+
 ### Shaddy/Translucent Specular (Spec Mapped) (Bumped)
 
 Drop-in replacement of KSP/Bumped Specular (Mapped), single HDR transmission color value
@@ -356,6 +387,8 @@ Drop-in replacement of KSP/Bumped Specular (Mapped), single HDR transmission col
 | `_BumpMap`           | Texture |          |      |
 | `_TransmissionColor` | Color   | HDR      |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
+
+This shader has a back face culling version.
 
 ### Shaddy/Translucent Cutoff
 
@@ -410,6 +443,8 @@ One-colored version of Shaddy/Translucent
 | `_Color`             | Color   |          |      |
 | `_TransmissionColor` | Color   | HDR      |      |
 | `_AmbientBase`       | Float   | 0 - 1    |      |
+
+This shader has a back face culling version.
 
 ### Shaddy/Translucent (Monocolor) (Clip Out)
 
