@@ -19,7 +19,7 @@ Shaddy is a collection of shaders made for Kerbal Space Program, not to be confu
 
 Shaddy does not do anything by itself, it is designed to be used by other mods. If you run into any problem with the shader please feel free to report it as an issue.
 
-Despite that, Shaddy does come with a set of [Textures Unlimited](https://forum.kerbalspaceprogram.com/index.php?/topic/167450-*) config for Stock and ReStock parts. They will only activate if you installed both Textures Unlimited and [Module Manager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-*) at the same time.
+Despite that, Shaddy does come with a set of [Textures Unlimited](https://forum.kerbalspaceprogram.com/index.php?/topic/167450-*) config for Stock, ReStock, and Near Future Solar parts. They will only activate if you installed both Textures Unlimited and [Module Manager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-*) at the same time.
 
 Goto [Demo section](#demo) to see the effect preview.
 
@@ -113,7 +113,7 @@ For players: [SpaceDock](https://spacedock.info/mod/3064/Shaddy), also available
 
 For modders: [SDK](https://github.com/Icecovery/Shaddy/releases). 
 
-Note that not all versions of the mod will have a corresponding version of SDK since shaders might not change between mod releases. Download the latest SDK available if no SDK matches the latest mod version. E.g.: If the latest mod version is v2.2, but the latest SDK version is v2.1, use SDK v2.1.
+Note that not all versions of the mod will have a corresponding version of SDK since shaders might not change between mod releases. Download the latest SDK available if no SDK matches the latest mod version. E.g.: If the latest mod version is v2.4, but the latest SDK version is v2.3, use SDK v2.3.
 
 ---
 
